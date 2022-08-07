@@ -29,4 +29,3 @@ Copyright © 2022 [Dakusy](https://github.com/Dakusy).<br />
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
