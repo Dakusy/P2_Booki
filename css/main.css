@@ -1,8 +1,8 @@
 .body{
     font-family: 'Raleway', sans-serif;
-    width:80%;
     margin-right:auto;
     margin-left:auto;
+    width: 80%;
 }
 
 ul>li {
@@ -20,6 +20,7 @@ header{
 .comment {
     margin: 6px 0;
     color: grey;
+    font-size:15px;
 }
 
 .headernav .nav-link {
@@ -56,3 +57,110 @@ footer {
 .list a:hover{
     color:blue;
 }
+
+
+.recherche {
+    display:flex;
+}
+
+#icone_recherche {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    line-height: 3;
+    text-align: center;
+}
+
+.text_recherche {
+    font-weight: bold;
+    padding-left: 20px;
+    width: 234px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid #F2F2F2;
+}
+
+.submit_recherche{
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    width: 133px;
+    height: 50px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 18px;
+    color:white;
+    background-color:#0065FC;
+    cursor: pointer;
+}
+
+.text_recherche:hover {
+    color:blue;
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.filtres {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 15px;
+}
+
+.all_filtres{ 
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 28px;
+}
+
+.all_filtres a{
+    text-decoration:none;
+    color:black;
+}
+
+.filtres_background{ 
+    box-sizing: content-box;
+    width: auto;
+    height: auto;
+    border: 2px solid #d9d9d9;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+
+.filtres_background:hover {
+    transition: 0.6s;
+    background-color: #c5e0ff;
+    border: 2px solid² #0065FC;
+    box-shadow: 0px 0px 15px rgba(66, 167, 250, 0.733);
+}
+
+.size_filtres {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.icones_filtres {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2px;
+    position: relative;
+}
+

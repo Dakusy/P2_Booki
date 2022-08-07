@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang ="fr">
-<head>
-<meta charset=”utf-8″>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css"
-<link href="<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="16x16" href="images/logo/Booki.png">
-<title>Booki</title>
+<head>
+    <meta charset=”utf-8″>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/Booki.png">
+    <title>Booki</title>
 </head>
 
 <body class="body">
@@ -23,9 +24,54 @@
     </nav>
 
 </header>
+<div class="main">
+    <section>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="comment">En plein centre ville ou en pleine nature</p>
 
-<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-<p class="comment">Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.</p>
+        <form class = "recherche" method="post" action="">
+            <i id="icone_recherche" class="fa-solid fa-location-dot"></i>
+            <input class="text_recherche" type="search" value="Marseille, France">
+            <input class="submit_recherche" type="submit" name="search" value="Rechercher">
+
+        </form>
+            <div class ="filtres">
+                <p class="text_filtres">Filtres</p>
+                <div class="all_filtres">
+                    <a href="">
+                    <ul class="filtres_background">
+                        <li class="icones_filtres"><i class="fa-solid fa-money-bill-wave"></i></li>
+                        <li class="size_filtres">Economiques</li>
+                    </ul>
+                    </a>
+                    
+                    <a href="">
+                    <ul class="filtres_background">
+                        <li class="icones_filtres"><i class="fa-solid fa-child-reaching"></i></li>
+                        <li class="size_filtres">Familial</li>
+                    </ul>
+                    </a>
+
+                    <a href="">
+                    <ul class="filtres_background">
+                        <li class="icones_filtres"><i class="fa-solid fa-heart"></i></li>
+                        <li class="size_filtres">Romantique</li>
+                    </ul>
+                    </a>
+
+                    <a href="">
+                    <ul class="filtres_background">
+                        <li class="icones_filtres"><i class="fa-solid fa-dog"></i></li>
+                        <li class="size_filtres">Animaux autorisés</li>
+                    </ul>
+                    </a>
+                
+                </div>
+
+            </div>
+        </section>
+</div>
+
 
 <footer>
     <div class = "list">
