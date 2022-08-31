@@ -224,9 +224,10 @@ nav ul li:hover {
     align-items: baseline;
 }
 
-h2 {
+.container_populaire h2 {
     display:flex;
     justify-content: space-between;
+    margin:3%;
 }
  .star_big {
     display: flex;
