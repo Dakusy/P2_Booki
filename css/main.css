@@ -415,6 +415,80 @@ footer {
     color: #0065FC;
 }
 
+@media (max-width: 992px) {
+    body{
+        width: auto;
+        border: none;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 0%;
+
+    }
+
+    .container {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+    h2 {
+        margin: 3%;
+    }
+
+    /*card hebergement */
+
+    .container_hebergement {
+        width:100%;
+        margin-top:15px;
+    }
+
+    .card_hebergement {
+        width: 48%;
+        height: 350px;
+    }
+
+    .img_hebergement {
+        height: 70%;
+    }
+
+    /* card populaire*/
+
+    .container_populaire {
+        margin-top:15px;
+        width:100%;
+        justify-content:flex-start;
+    }
+
+    .box_populaire{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card_populaire{
+        min-width: 255px;
+        height: 190px;
+    }
+
+    /*activity*/
+
+    /* activity */
+
+    .activity_main {
+        padding: 20px;
+    }
+
+    .container_activity {
+        height: auto;
+        gap: 20px;
+    }
+
+    .container_activity a {
+        width: 100%;
+        height: 220px;
+    }
+
+
+
+
 
 @media (max-width: 768px) {
     /* header */
@@ -490,8 +564,6 @@ footer {
         border-radius: 0px 0px 0px 0px;
         padding: 10% 0% 9% 0%;
         width: 100%;
-        flex-wrap: nowrap;
-        flex-direction: column;
         margin-top: 30px;
     }
 
@@ -514,6 +586,10 @@ footer {
         flex-direction: column;
         flex-wrap: nowrap;
         gap: 15px;
+    }
+
+    h2 {
+        margin-bottom:15px;
     }
 
     /* activity */
