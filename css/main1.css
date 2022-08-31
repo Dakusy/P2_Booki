@@ -7,16 +7,11 @@
     font-family: 'Raleway', sans-serif;
 }
 
-body {
-    margin: 0 auto;
-    max-width: 1600px;
-}
+/* Body */
 
-h1 {
-    text-align: left;
-    color: #000000; 
-    margin-top: 0px;
-    margin-bottom: 0px;
+header {    
+    display: flex;
+    justify-content:space-between;
 }
 
 img {
@@ -24,13 +19,6 @@ img {
     width:100%;
     object-fit:cover;
     object-position:center;
-}
-
-/* header */
-
-header {    
-    display: flex;
-    justify-content:space-between;
 }
 
 .logo{
@@ -43,36 +31,40 @@ header {
     height: 45px;
 }
 
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul>li {
+    display: inline-block;
+    text-decoration:none;
+}
+
 a {
     text-decoration : none;
     text-align: left;
     color: black;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
 
-nav ul li {
-	border-top: 3px solid #ffffff00;
-    padding: 50px 60px 50px 60px;
-} 
-nav ul{ 
-    display: flex;
-    justify-content: flex-end; 
-}
-nav ul li:hover {
-	border-top: 3px solid #0065FC;
-}
-
-/* search  + text */
 
 .comment {
     margin: 6px 0;
     color: grey;
     font-size:15px;
+}
+
+.headernav .nav-link {
+    text-decoration: none;
+    padding: 33px 25px 0 25px;
+    text-align:center;
+    color:black;
+}
+
+.headernav .nav-link:hover{
+    color: #0065FC;
+    border-top: 3px solid #8a3865;
 }
 
 .recherche {
@@ -115,14 +107,15 @@ nav ul li:hover {
     color: #0065FC;
 }
 
-/* filters */
+
+
+/* filtres */
 
 .filtres {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin-top: 30px;
-    margin-bottom:30px;
+    margin-top: 15px;
 }
 
 .text_filtres {
@@ -202,8 +195,6 @@ nav ul li:hover {
     justify-content: center;
 }
 
-
-
 /* stars */
 
 .stars_blue {
@@ -223,13 +214,7 @@ nav ul li:hover {
     justify-content: flex-start;
     align-items: baseline;
 }
-
-h2 {
-    display:flex;
-    justify-content: space-between;
-}
  .star_big {
-    display: flex;
 color: #000000; 
 font-size: 22px;
  }
@@ -292,7 +277,7 @@ font-size: 22px;
     display: flex;
     flex-direction: column;
     width: 30%;
-    padding: 20px;
+    padding: 40px;
     border-radius: 30px;
     background-color: whitesmoke;
 }
@@ -317,24 +302,13 @@ font-size: 22px;
     background-color: rgb(255, 255, 255);
 }
 
-.img_populaire {
-    width: 40%;
-    height: 100%;
-}
-
-.info_populaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    width: 60%;
-}
 
 /* activity */
 
 .activity_main{
     margin-top: 40px;
 }
+
 
 .container_activity {
     display: flex;
@@ -344,7 +318,7 @@ font-size: 22px;
     flex-wrap: wrap;
     height: 550px;
     width: 100%;
-    gap: 3%;
+    gap: 2.6%;
     margin: 20px 0 60px;
 }
 
@@ -387,7 +361,6 @@ font-size: 22px;
     height: 250px;
 }
 
-
 /* footer */
 
 footer {
@@ -415,6 +388,20 @@ footer {
     color: #0065FC;
 }
 
+
+/* Media Queries */
+
+@media (max-width: 1496px) {
+
+
+
+}
+
+@media (max-width: 992px) {
+
+
+
+}
 
 @media (max-width: 768px) {
     /* header */
@@ -455,7 +442,7 @@ footer {
         margin-top: 0px;
         border-bottom: 3px solid #F2F2F2;
     }
-    nav ul li:hover{
+    nav ul li:hover{/* hover pour Barre Overline menu nav */ 
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
@@ -464,78 +451,5 @@ footer {
     }
     nav a:hover{
         border-bottom: 0;
-    }
-
-    h1 {
-        margin-top: 35px;
-        margin-bottom: 13px;
-    }
-
-    /* card hebergement */
-
-    .container_hebergement{
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: #ffffff00;
-        border-radius: 0px 0px 0px 0px;
-        width: 100%;    
-        margin-top: 25px;
-    }
-
-    .container_populaire{
-        box-sizing: border-box;
-        border-left: solid #F2F2F2 20px;
-        border-right: solid #F2F2F2 20px;
-        background-color: #F2F2F2;
-        border-radius: 0px 0px 0px 0px;
-        padding: 10% 0% 9% 0%;
-        width: 100%;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin-top: 30px;
-    }
-
-    .container{
-        flex-direction: column-reverse; 
-        column-gap: 0%;
-    }
-
-    .box_hebergement{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 15px;
-    }
-
-    .card_hebergement {
-            width: 100%; 
-    }
-
-    .box_populaire{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 15px;
-    }
-
-    /* activity */
-
-    .activity_main {
-        padding: 20px;
-    }
-
-    .container_activity {
-        height: auto;
-        gap: 20px;
-    }
-
-    .container_activity a {
-        width: 100%;
-        height: 220px;
-    }
-
-    /* footer */
-
-    footer {
-        flex-direction: column;
-        justify-content: center;
     }
 }
