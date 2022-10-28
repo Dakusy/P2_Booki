@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Booki est un projet de mise en situation où l'ont doit transformer une maquette en code.
+> GameOn est un projet de ...
 
 ## Author
 
